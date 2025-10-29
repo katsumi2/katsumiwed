@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>不動産・建築会社トップページ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#c0a172", // Gold as requested
+              "text-primary": "#1A2A4D", // Dark Blue as requested
+              "background-light": "#f6f6f8",
+              "background-dark": "#111221",
+            },
+            fontFamily: {
+              "display": ["Manrope", "Noto Sans JP", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-primary dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-center bg-white/80 dark:bg-background-dark/80 backdrop-blur-md w-full border-b border-gray-200 dark:border-gray-700">
+<div class="flex items-center justify-between whitespace-nowrap px-10 py-4 max-w-screen-xl w-full">
+<div class="flex items-center gap-4 text-text-primary dark:text-white">
+<span class="material-symbols-outlined text-3xl">
+                            architecture
+                        </span>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">UrbanArch</h2>
+</div>
+<div class="flex flex-1 justify-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">物件を探す</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">家づくりの流れ</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">施工事例</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">会社概要</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">お問い合わせ</a>
+</div>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">資料請求</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center w-full">
+<div class="layout-content-container flex flex-col max-w-screen-xl flex-1">
+<!-- HeroSection -->
+<div class="w-full @container py-10 px-5">
+<div class="flex min-h-[520px] flex-col gap-8 items-center justify-center p-8 rounded-lg" data-alt="Wide-angle shot of a modern, luxurious house with large glass windows and a serene garden." style='background-image: linear-gradient(rgba(26, 42, 77, 0.3) 0%, rgba(26, 42, 77, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2vZIsXfjNgj6RaeVH-dk_0fGeborUN5kxn5mCcYdDrlLj7gBOzl7cWYuUQJNkzxb3TV8SjKa6G6rtIUVu4x08arl-CFrch3adArrpauz42v5vWqib3iXH9a8h4Qqhv_K7NArZ0pH5z_M8cRvbBbMBQtsu6vFfwUH3kDMIJAoKhJc13Epw_XIo5WlkC1EF3oegHmvP2d63rirQPUI7y9l3LUWwul6iyzTqrEWqH2EU4H1-ZZ3QTlieUjQ_5CGHQGF08bHfdoaztEk"); background-size: cover; background-position: center;'>
+<h1 class="text-white text-5xl font-black leading-tight tracking-[-0.033em] text-center max-w-3xl">
+                                未来の暮らしを、デザインする。
+                            </h1>
+<div class="flex-wrap gap-4 flex justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">まずは無料相談</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-white dark:bg-background-light text-text-primary text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-opacity">
+<span class="truncate">最新の物件情報</span>
+</button>
+</div>
+</div>
+</div>
+<!-- FeatureSection -->
+<div class="flex flex-col gap-10 px-4 py-16 @container">
+<h2 class="text-text-primary dark:text-white tracking-light text-4xl font-black leading-tight tracking-[-0.033em] max-w-[720px] px-4">
+                            私たちの強み
+                        </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+<div class="flex flex-1 gap-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6 flex-col">
+<span class="material-symbols-outlined text-primary text-3xl">
+                                    design_services
+                                </span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight">卓越したデザイン</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">美しさと機能性を両立させた、時代を超える建築デザインをご提案します。</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6 flex-col">
+<span class="material-symbols-outlined text-primary text-3xl">
+                                    memory
+                                </span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight">先進のテクノロジー</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">最新の建築技術と素材を駆使し、快適で持続可能な住まいを実現します。</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6 flex-col">
+<span class="material-symbols-outlined text-primary text-3xl">
+                                    groups
+                                </span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight">お客様第一のアプローチ</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">お客様一人ひとりの夢に寄り添い、理想の家づくりを全力でサポートします。</p>
+</div>
+</div>
+</div>
+</div>
+<!-- SectionHeader for Case Studies -->
+<div class="px-4 pb-3 pt-10">
+<h2 class="text-text-primary dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">施工事例</h2>
+</div>
+<!-- ImageGrid for Case Studies -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A minimalist urban home with clean lines and a white facade." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDy0EczP7G3bpgYyLr-nvXXNbBkrfqtYts_ZawUsXNyE4CRpL_L0VH7n_yYAEBkwTICfzxK0O0sF0fQ1v4CHP2DOTHpxcZH3nymRCgHa_Wwniepq3ioDLzq3yrT0aDJxC0lQGCHyiUq8qOfkDLLV-yoyKVmpEKMVHYl2VXCeSBLChw8IbrTsUeXeu0XSiEPp7pyuwsMXS7UQYGWzWVQJLdJrpenJatnWvphawjHaGffObkbW4L2KdtxE79QDRatd9zXx0CHb5rYWIQ");'></div>
+</div>
+<div>
+<p class="text-base font-bold leading-normal">ミニマルな都市型住宅</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">東京都渋谷区</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A house with large windows seamlessly blending with surrounding lush greenery." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDuw6mHMbO1TauuwzOm1gMukrZL-1CTPmL29KatMdPdSToGmRZdmd1YmSGN8whAMJdyxi8aGeLsfEXwg3834nIPmax6xEJ4wgjwEHgVHFtJBYpaM5lY_fQ8LIMra5MYPYz_z3MXjyvBaQ7AkFRdw5RxVRE_TVYQJCtFCciM6mHMZfazKqytkP-ktsx-_w3KRvQnshcojo0rJNc5gaVGl0k_AbIBXXPFv0dkYebil8SfzSTm4UvOi2AZh5iB23YZYTJm-lN7Y7eQ9zc");'></div>
+</div>
+<div>
+<p class="text-base font-bold leading-normal">光と緑が調和する家</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">神奈川県鎌倉市</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="An open-plan living room with high ceilings and a cozy fireplace where a family is relaxing." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCulZTAq8uT8XnsGoZFgQZQs9MUjw9kDje6TYRhngglRfEFa0ZQwMT0nijR_mra9Gih4zNPYKQiG30PQKrnDAjfHmI2_QuWd27U3yr4wD6ROgFRsr9Fs_kVpr7-2n6ybF7bIhET8nHsqDiC5hg_p6ptxW2M5zPxoYHKnOHTvQnDCRZmPf2bv54UnDd72x3bsGJZ6DDQU9tBbThhF36y8VwbGv9IfMU4KeVCJTkHqKonnpCDRddrjppT9kB9IuYaStr7pBVVW6-m87c");'></div>
+</div>
+<div>
+<p class="text-base font-bold leading-normal">家族が集う開放的なリビング</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">埼玉県さいたま市</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A residence that combines traditional Japanese architectural elements with modern design." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDa9c0ckDoJ2ZuYB9Eu2BzgRHeEQpyNwdkqhv-WjBSkN4uTydM5BuDnLovoJblJk51rLmtxzZiJ6QkFOdRMmNQPRqc-XY21sNS1L6wY7OIp-V66DrWJSQZvBDNHk85oKa36z7JC_oczrSLcyq3k8coLZeazBKHojk0EHX9ma4ZUG3_OODI5IyWgbeSjgDm3Mf4WTiQo1Gbe87i_6O3gdVCl2OIj4DMEgSG4tEudbNC2qcb0JAjyTjIOMEsC9DRQJ7chdiTjN-FeaYQ");'></div>
+</div>
+<div>
+<p class="text-base font-bold leading-normal">伝統とモダンが融合した邸宅</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">千葉県市川市</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A tranquil interior space in a city apartment, featuring natural materials and soft lighting." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBiWWtziqX1Tel9_jQqGF0N4UGpqk7YBlEW74Rq5Q2CZwOMdf8JVOoKowMhqDB6rmgG4XWRP6kZJJ_axCpH8YbKRIgiM_-5V0mZU4-tp4T4SfOiBP9uqBUhV3Ay7jg1KjhE3sxwNp3S-HHA1dfZz1t4hho48fmDjKYhSw4Pbp3rdwN3sBbLt0_2ZSF5Qv8cxPCWqXz0EkBTg-AL8fynRVTt7oLDbTEnQefXOGBcZV8z3Poi_42eVSNzVq8pcAQPZoJDPkUTqOeh4b8");'></div>
+</div>
+<div>
+<p class="text-base font-bold leading-normal">都心に佇む静寂の空間</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">東京都港区</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A modern house with an integrated garage displaying a classic car." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMWXVrhnm-MvCQY7Hkar3IhzGBv-o1b9XOc1ZZqSNWUwxQgZhUo8q8SpMKGm1wqL_GaSIVGSntMyy9RXqHlQM6XWuIsxGAcrVv36FNpSifdtmPr9xxOGDOUicCcQZZhKdIDVTzUJ8elyd5QC5wIFLTAD5LbKqdoySHMTFoB1wR_QVP9D3wLZxXlZM7NFplMl4bSCwig76xqsQLwYbrU5CGXu54CFfQTRr-NkbxdFZhZ7QDEN4K3IZEoEC9SVSyLS_5zFhIAsejThY");'></div>
+</div>
+<div>
+<p class="text-base font-bold leading-normal">趣味を楽しむガレージハウス</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">神奈川県横浜市</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>
